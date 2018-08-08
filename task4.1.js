@@ -11,9 +11,9 @@ class Car extends Vehicle {
 
     displayInfo() {
         console.log(`Car model: ${this.model};
-        	    made in: ${this.year};
-            	    maximum speed ${this.maxSpeed}`);
+        	         made in: ${this.year};
+            	     maximum speed ${this.maxSpeed}`);
     }
 }
 
-module.exprts =  Car;
+module.exprts = Car;
