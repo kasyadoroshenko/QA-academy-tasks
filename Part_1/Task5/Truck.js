@@ -1,4 +1,4 @@
-let Vehicle = require('./Vehicle.js');
+let Vehicle = require('./vehicle.js');
 class Truck extends Vehicle {
     constructor(carModel, carYear, maxSpeed) {
         super(carModel, carYear, maxSpeed);

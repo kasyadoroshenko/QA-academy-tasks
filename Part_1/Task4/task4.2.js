@@ -1,4 +1,4 @@
-let Vehicle = require('./Vehicle');
+let Vehicle = require('./vehicle');
 
 class Truck extends Vehicle {
     constructor(carModel, carYear, maxSpeed) {
