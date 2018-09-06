@@ -4,7 +4,7 @@ exports.config = {
 	framework: 'jasmine',
 	allScriptsTimeout: 45000,
 	getPageTimeout: 30000,
-	specs: ['../test_specs/*.js'],
+	specs: ['spec.1.js'],
 	capabilities: {
 		browserName: "firefox"
 	},
