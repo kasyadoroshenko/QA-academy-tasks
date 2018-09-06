@@ -6,12 +6,12 @@ let random3 = randomstring.generate({
     charset: 'alphabetic'
 });
 
-console.log(random1)
-console.log(random2)
-console.log(random3)
+console.log(random1);
+console.log(random2);
+console.log(random3);
 
-let random4 = Math.random()
-console.log(random4)
+let random4 = Math.random();
+console.log(random4);
 
-let random5 = Math.floor((Math.random() * 100) + 1)
-console.log(random5)
+let random5 = Math.floor((Math.random() * 100) + 1);
+console.log(random5);
