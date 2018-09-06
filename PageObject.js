@@ -7,19 +7,19 @@ const LOCATORS = {
 
 export default class KanbanBoardPage extends NormalPage {
 
-    constructor(){
+    constructor() {
         super();
         this.waitForPageAvailable();
-        }
+    }
 
     waitForPageAvailable() {
         this._getMyKanbanPane().isVisible();
         this._getBrainstormSection().isVisible();
     }
 
-    isItemPresentUnderBrainstormSection(itemname){
-        for (let elem of this._getBrainstormItemTitleElement().findAll()){
-            if((elem.getText() ===itemName) && elem.isVisible())
+    isItemPresentUnderBrainstormSection(itemname) {
+        for (let elem of this._getBrainstormItemTitleElement().findAll()) {
+            if ((elem.getText() === itemName) && elem.isVisible())
                 return true;
         }
         return false;
@@ -29,8 +29,8 @@ export default class KanbanBoardPage extends NormalPage {
     *Page element getters
     */
 
-    _getMyKanbanPane(force = false){
-        if(!force && this.myKanbanPane)
+    _getMyKanbanPane(force = false) {
+        if (!force && this.myKanbanPane)
             return this.myKanbanPane;
         this.myKanbanPane = new TextView(this, $(LOCATORS.myKanbanPane), "Kanban pane");
         return this.myKanbanPane;
