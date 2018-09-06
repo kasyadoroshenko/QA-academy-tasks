@@ -4,8 +4,9 @@ exports.config = {
 	framework: 'jasmine',
 	allScriptsTimeout: 45000,
 	getPageTimeout: 30000,
-	specs: ['spec.1.js'],
+	specs: ['../test_specs/*.js'],
 	capabilities: {
 		browserName: "firefox"
 	},
 	seleniumAddress: 'http://localhost:4444/wd/hub'
+};
