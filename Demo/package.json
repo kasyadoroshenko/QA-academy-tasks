@@ -1,0 +1,20 @@
+{
+    "name": "MyFirstApp",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "license": "ISC",
+    "main": "./configs/conf.js",
+    "dependencies": {},
+    "devDependencies": {
+      "allure-commandline": "^2.7.0",
+      "jasmine-allure-reporter": "^1.0.2",
+      "protractor": "^5.3.2"
+    },
+    "scripts": {
+      "test:ui": "./node_modules/.bin/protractor ./configs/conf.js --disableChecks",
+      "test:driver-manager:update": "./node_modules/.bin/webdriver-manager update --versions.standalone=3.14.0 --versions.chrome=2.41.0",
+      "test:driver-manager:start": "./node_modules/.bin/webdriver-manager start  --versions.standalone=3.14.0 --versions.chrome=2.41.0",
+      "report:build": "allure generate allure-results --clean -o allure-reporter"
+    }
+  }
