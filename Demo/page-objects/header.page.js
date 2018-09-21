@@ -1,5 +1,5 @@
 let WebButton = require("../controls/web.button");
-let WebTextInput = require("../controls/web.text-input");
+let WebTextInput = require("../controls/web.text.input");
 let WebText = require("../controls/web.text");
 
 let EC = protractor.ExpectedConditions;
