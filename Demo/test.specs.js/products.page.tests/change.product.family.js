@@ -5,10 +5,10 @@ const HeaderPage = require('./../page-objects/header.page');
 const ToasterMessage = require('./../components/toaster-messages');
 const generatedNumber = new Date().valueOf();
 
-let productName = `Ilona-Vasylyshyn automation ${generatedNumber}`;
+let productName = `JS_Demo_2018 ${generatedNumber}`;
 
-const productFamily = 'Ilona_Vasylyshyn Product Family 1';
-const productFamily2 = 'Ilona_Vasylyshyn Product Family 2';
+const productFamily = 'JS_Demo_2018 Product Family 1';
+const productFamily2 = 'JS_Demo_2018 Product Family 2';
 
 fdescribe('Change Product Family: ', () => {
     before(async () => {
