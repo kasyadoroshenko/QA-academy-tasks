@@ -10,7 +10,7 @@ let productName = `Ilona-Vasylyshyn automation ${generatedNumber}`;
 const productFamily = 'Ilona_Vasylyshyn Product Family 1';
 const productFamily2 = 'Ilona_Vasylyshyn Product Family 2';
 
-fdescribe('Product Functionality: ', () => {
+fdescribe('Change Product Family: ', () => {
     before(async () => {
         await browser.restart();
     });

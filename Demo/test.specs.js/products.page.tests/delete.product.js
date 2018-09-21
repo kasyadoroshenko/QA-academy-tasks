@@ -10,7 +10,7 @@ let productName = `JS_Demo_2018 ${generatedNumber}`;
 const productFamily = 'JS_Demo_2018 Product Family 1';
 const productFamily2 = 'JS_Demo_2018 Product Family 2';
 
-fdescribe('Product Functionality: ', () => {
+fdescribe('Delete Product : ', () => {
     before(async () => {
         await browser.restart();
     });
