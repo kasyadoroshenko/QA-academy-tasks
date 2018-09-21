@@ -4,7 +4,7 @@ let WebText = require("../controls/web.text");
 
 let EC = protractor.ExpectedConditions;
 
-class HeaderPag {
+class HeaderPage {
     constructor() {
         this.productText = new WebText(element(by.css(".gds-navigation > li:nth-child(1)")), 'product menu');
         this.administrationText = new WebText(element(by.css(".gds-navigation > li:nth-child(2)")), 'administration menu');
@@ -15,7 +15,7 @@ class HeaderPag {
     }
 
     async goToProducts() {
-        // elementToBeClickable
+     
         return await this.getProductsMenu().click();
     }
 
@@ -49,4 +49,4 @@ class HeaderPag {
 
 }
 
-module.exports = HeaderPag;
+module.exports = HeaderPage;
