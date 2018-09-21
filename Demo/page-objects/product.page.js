@@ -176,7 +176,7 @@ class ProductPage {
     }
 
     async setProductRepository(description) {
-        // CKEDITOR.instances.editor2.setData("qweqweqweqweqweqweqweqweqws")
+      
         browser.executeScript(function (arg) {
             window.CKEDITOR.instances.editor2.setData(arg);
         }, description);
